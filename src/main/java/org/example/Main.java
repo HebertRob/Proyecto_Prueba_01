@@ -1,17 +1,22 @@
 package org.example;
+import java.util.Scanner;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.println("Hola y Bienvenidos!");
-
-        for (int i = 1; i <= 6; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
+        Scanner teclado = new Scanner(System.in);
+        int tamaño;
+       // int a[];
+        System.out.println("PERMUTACIONES:\n");
+        System.out.println("¿Cuantos numeros desea Permutar?:\n");
+        tamaño = teclado.nextInt();
+         int a[]=new int[tamaño];
+          //a=new int[tamaño];
+        for (int i = 0; i < tamaño; i++) {
+            System.out.println("Ingrese el numero " + (i + 1) + ":");
+            a[i] = teclado.nextInt();
         }
+        System.out.println("Longitud del arreglo: " + a.length);
     }
 }

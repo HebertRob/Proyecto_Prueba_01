@@ -7,12 +7,11 @@ public class Main {
     public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in);
         int tamaño;
-       // int a[];
+        int a[];
         System.out.println("PERMUTACIONES:\n");
         System.out.println("¿Cuantos numeros desea Permutar?:\n");
         tamaño = teclado.nextInt();
-         int a[]=new int[tamaño];
-          //a=new int[tamaño];
+        a=new int[tamaño];
         for (int i = 0; i < tamaño; i++) {
             System.out.println("Ingrese el numero " + (i + 1) + ":");
             a[i] = teclado.nextInt();
